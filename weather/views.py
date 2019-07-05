@@ -10,3 +10,5 @@ def item(request):
 def about(request):
     return render(request, 'weather/about.html')
 
+def items(request):
+    return render(request, 'weather/items.html')
