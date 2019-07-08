@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Home</title>
+  <title>Wave-weather-items</title>
 
   <!-- Bootstrap core CSS -->
   <link href='{% static "weather/vendor/bootstrap/css/bootstrap.min.css" %}' rel="stylesheet">
@@ -25,6 +25,7 @@
 </head>
 
 <body>
+
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
@@ -52,50 +53,62 @@
     </div>
   </nav>
 
+
+
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('{% static "weather/img/cloud_backgorund.jpg" %}')">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="site-heading">
-            <h1>Welcome to Crime Risk Index</h1>
-            <span class="subheading"><a href="#sendMessageButton" id="today_CRI">check today's CRI </a></span>
-          </div>
-        </div>
-      </div>
-    </div>
+  <header class="masthead" style="background-image: url({% static 'weather/img/home-bg.png' %})">
+&nbsp;<br><br>
   </header>
 
   <!-- Main Content -->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <h4 class="post-subtitle" align="center">날짜와 장소를 선택하고 send 버튼을 누르세요</h4><br><br>
-        <form name="sentMessage" id="CRIForm" novalidate>
-          <div class="control-group">
-            <div class="form-group floating-label-form-group controls">
-              <label>Date</label>
-              <input type="date" class="form-control" placeholder="Date" id="currentDate" required data-validation-required-message="Please enter date.">
-              <p class="help-block text-danger"></p>
+    <br>
+
+    <div class="container" style="background-image: url({% static 'weather/img/white.png' %})">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-preview">
+                <h2 id = 'a1' class="post-title">
+                  제휴 카드사를 통한 카드 상품
+                </h2>
+                <br>
+                <table border = 0>
+                  <tr><td rowspan="3">
+                    <img src = '{% static "weather/img/payback.png" %}' width = 400 height = 300></td><td>&nbsp;&nbsp;&nbsp;</td>
+                    <td><h5 class="post-subtitle"> 범죄 위험 지수를 기반으로 매일의 페이백 확률 또는 페이백 비율을 변동 시킨다</h5></td></tr>
+                  <tr><td>&nbsp;&nbsp;&nbsp;</td><td><h5 class="post-subtitle"> 사람들로 하여금 카드의 혜택을 받으면서 자연스럽게 범죄 위험 지수에 관심을 갖게 한다</h5></td></tr>
+                  <tr><td>&nbsp;&nbsp;&nbsp;</td><td><h5 class="post-subtitle"> 적절한 페이백 확률과 비율을 선정해 카드 수수료로 수익을 창출할 수도 있다</h5></td></tr>
+                  </table>
+              <br>
+              <div class="clearfix">
+                 <a class="btn btn-primary float-right" href="JavaScript:history.go(-1)">Back</a>
+              </div>
             </div>
-            <div class="form-group floating-label-form-group controls">
-              <label>Place</label>
-              <select class="form-control" name="place" size="2" required data-validation-required-message="Please enter date.">
-                <option value="seoul" selected="selected">서울시
-                <option value="gyeonggi">경기도
-              </select>
-              <p class="help-block text-danger"></p>
-            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="post-preview">
+                <h2 id = 'a2' class="post-title">
+                  소셜커머스 업체를 통한 SNS 이벤트
+                </h2>
+                <br>
+                  <table border = 0>
+                  <tr><td rowspan="3">
+                    <img src = '{% static "weather/img/sns.png" %}' width = 400 height = 300><br><br>
+                  <td>&nbsp;&nbsp;&nbsp;</td>
+                    <td><h5 class="post-subtitle">깜짝 이벤트 혹은 사전에 공지를 통하여 많은 사람들이 관심을 갖게 한다</h5></td></tr>
+                  <tr><td>&nbsp;&nbsp;&nbsp;</td><td><h5 class="post-subtitle">유통 업체와 사전 협의를 통해 기프티콘(혹은 다양한 상품) 등을 한정 수량 지원 받는다</h5></td></tr>
+                  <tr><td>&nbsp;&nbsp;&nbsp;</td><td><h5 class="post-subtitle">범죄 위험 지수가 높은 날에 추첨 혹은 범죄 예방 문자 전달이나 공유를 통해 기프티콘 등의 보상을 한다</h5></td></tr>
+                  </table>
+               <br>
+
+            <hr>
+            <!-- Pager -->
           </div>
-          <div class="form-group" align="center" >
-            <p></p>
-            <button type="submit" class="btn btn-primary" id="sendMessageButton">Send</button>
-          </div>
-        </form>
+        </div>
       </div>
-    </div>
-  </div>
+
+
+
 
   <!-- Footer -->
   <footer>
@@ -128,7 +141,7 @@
               </a>
             </li>
           </ul>
-          <p class="copyright text-muted">Copyright &copy; tave_wave</p>
+          <p class="copyright text-muted">Copyright &copy; Wave 2019</p>
         </div>
       </div>
     </div>
@@ -144,18 +157,3 @@
 </body>
 
 </html>
-
-<script type="text/javascript">
-  document.getElementById('currentDate').value = new Date().toISOString().substring(0, 10);;
-
-  window.onload = function() {
-    document.getElementById('today_CRI').onclick = function() {
-      document.getElementById('CRIForm').submit();
-      return false;
-    };
-  };
-
-
-</script>
-
-

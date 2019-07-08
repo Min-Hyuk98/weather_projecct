@@ -12,3 +12,9 @@ def about(request):
 
 def items(request):
     return render(request, 'weather/items.html')
+
+def plan(request):
+    return render(request, 'weather/plan.html')
+
+def plans(request):
+    return render(request, 'weather/plans.html')
