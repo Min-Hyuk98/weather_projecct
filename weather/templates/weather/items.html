@@ -63,21 +63,21 @@
   <!-- Main Content -->
     <br>
 
-    <div class="container" style="background-image: url({% static 'weather/img/white.png' %})">
+    <div style="background-image: url({% static 'weather/img/white.png' %})">
+
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
-            <div class="post-preview">
+
+
+            <div class="post-preview" align ='center'>
                 <h2 id = 'a1' class="post-title">
-                  경찰 인력 배치
+                  이 달의 인력 배치(서울)
                 </h2>
                 <br>
-                <table border = 0>
-                  <tr><td rowspan="3">
-                    <img src = '{% static "weather/img/manpower.jpg" %}' width = 400 height = 300></td><td>&nbsp;&nbsp;&nbsp;</td>
-                    <td><h5 class="post-subtitle"> 범죄 위험 지수가 높은 지역에 집중적인 인력, cctv 배치</h5></td></tr>
-                  <tr><td>&nbsp;&nbsp;&nbsp;</td><td><h5 class="post-subtitle"> 그에 따른 경찰 1인당 인구비율 감소</h5></td></tr>
-                  <tr><td>&nbsp;&nbsp;&nbsp;</td><td><h5 class="post-subtitle"> 효율적인 인력 자원의 사용 및 분배</h5></td></tr>
-                  </table>
+              <table border = 0><tr><td rowspan = 2><img src = '{% static "weather/img/map2.jpg" %}' width = 400 height="300"></td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><h5 class="post-subtitle"><img src = '{% static "weather/img/caution.jpg" %}' width =20 height = 20> 이번 달은 날씨에 따른 범죄 발생확률은 매우 높습니다. </h5></td></tr>
+                <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><h5 class="post-subtitle"><img src = '{% static "weather/img/caution.jpg" %}' width =20 height = 20> 이번 달은 특히 서울에서의 범죄 발생확률이 높은 것으로 보입니다. 해당구역 경찰서는 관할 출동에 대비해주시기 바랍니다.</h5></td></tr>
+              </table>
               <br>
               <div class="clearfix">
                  <a class="btn btn-primary float-right" href="JavaScript:history.go(-1)">Back</a>
@@ -86,20 +86,16 @@
             <br>
             <hr>
             <br>
-            <div class="post-preview">
+            <div class="post-preview" align = 'center'>
                 <h2 id = 'a2' class="post-title">
-                  범죄 예방 캠페인
+                  관련 캠페인 활성화
                 </h2>
-                <br>
-                  <table border = 0>
-                  <tr><td rowspan="3">
-                    <img src = '{% static "weather/img/message.png" %}' width = 400 height = 240><br><br>
-                  <img src = '{% static "weather/img/board.png" %}' width = 400 height = 240></td><td>&nbsp;&nbsp;&nbsp;</td>
-                    <td><h5 class="post-subtitle">대중매체나 거리의 전광판을 활용하여 전파</h5></td></tr>
-                  <tr><td>&nbsp;&nbsp;&nbsp;</td><td><h5 class="post-subtitle">접하기 쉬운 문자 메세지나 카카오톡 활용하여 전파</h5></td></tr>
-                  <tr><td>&nbsp;&nbsp;&nbsp;</td><td><h5 class="post-subtitle">범죄 위험 지수를 통해 시민들의 범죄 의식 향상</h5></td></tr>
-                  </table>
-               <br>
+              <br>
+                <table border = 0><tr><td rowspan = 2><img src = '{% static "weather/img/message.jpg" %}' width = 400 height =300></td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><h5 class="post-subtitle"><img src = '{% static "weather/img/notice.jpg" %}' width =20 height = 20> 이번 달의 범죄 위험도는 높음이므로 범죄 예방 문자 발송 캠페인을 실시합니다. </h5></td></tr>
+                <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><h5 class="post-subtitle"><img src = '{% static "weather/img/notice.jpg" %}' width =20 height = 20> 거리의 전광판, SNS 등 다양한 대중매체를 통한 범죄 예방 관련 캠페인을 지향합니다. </h5></td></tr>
+              </table>
+              <br>
               <div class="clearfix">
                  <a class="btn btn-primary float-right" href="JavaScript:history.go(-1)">Back</a>
               </div>
@@ -107,17 +103,16 @@
             <br>
             <hr>
             <br>
-            <div class="post-preview">
+            <div class="post-preview" align = 'center'>
                 <h2 id = 'a3' class="post-title">
                   범죄 프로파일링
                 </h2>
                 <br>
                 <table border = 0>
-                  <tr><td rowspan="3">
-                    <img src = '{% static "weather/img/profiling.jpg" %}' width = 400 height = 300></td><td>&nbsp;&nbsp;&nbsp;</td>
-                    <td><h5 class="post-subtitle">범죄 위험 지수를 범죄자의 심리와 연관지어 분석</h5></td></tr>
-                  <tr><td>&nbsp;&nbsp;&nbsp;</td><td><h5 class="post-subtitle">프로파일러가 범죄 발생일의 범죄 위험 지수를 조회해 범인을 찾아내는데 기여</h5></td></tr>
-                  <tr><td>&nbsp;&nbsp;&nbsp;</td><td><h5 class="post-subtitle">범행 동기 등 검거에 도움이 되는 결론을 얻을 수도 있고 새로운 범죄 프로파일링 기법을 만들 수 있다</h5></td></tr>
+                  <tr><td rowspan="2">
+                    <img src = '{% static "weather/img/profiling.jpg" %}' width = 400 height = 300></td>
+                  <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><h5 class="post-subtitle"><img src = '{% static "weather/img/up.jpg" %}' width =20 height = 20> 이번 달은 범죄가 발생하기 쉬운 날씨가 지속되므로 계획 범죄보다는 우발 범죄의 확률이 높습니다. </h5></td></tr>
+                  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><h5 class="post-subtitle"><img src = '{% static "weather/img/up.jpg" %}' width =20 height = 20> 범행 동기 조사 및 범죄 프로파일링에 날씨와 범죄 위험도를 참고할 수 있습니다. </h5></td></tr>
                   </table>
                <br>
               <div class="clearfix">
@@ -127,17 +122,16 @@
             <br>
             <hr>
             <br>
-            <div class="post-preview">
+            <div class="post-preview" align = center>
                 <h2 id = 'a4' class="post-title">
                   미니보험
                 </h2>
               <br>
                 <table border = 0>
-                  <tr><td rowspan="3">
-                    <img src = '{% static "weather/img/mini.jpg" %}' width = 400 height = 360></td><td>&nbsp;&nbsp;&nbsp;</td>
-                    <td><h5 class="post-subtitle">범죄 위험 지수에 관한 일일 미니보험 상품화</h5></td></tr>
-                  <tr><td>&nbsp;&nbsp;&nbsp;</td><td><h5 class="post-subtitle">범죄 위험 지수가 높아질수록 낮은 보험료에 높은 보장률의 보험을 제공함으로써 시민들의 범죄로 인한 피해에 대한 보장 안정성 향상</h5></td></tr>
-                  <tr><td>&nbsp;&nbsp;&nbsp;</td><td><h5 class="post-subtitle">공공시설 성범죄 관련 미니보험, 어린이 미니 보험, 운전자 관련 미니 보험(보복운전) 등 다양한 예시가 있다</h5></td></tr>
+                  <tr><td rowspan="2">
+                    <img src = '{% static "weather/img/mini.jpg" %}' width = 400 height = 300></td>
+                  <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><h5 class="post-subtitle"><img src = '{% static "weather/img/good.jpg" %}' width =20 height = 20> 범죄 위험도가 높은 달이므로 범죄에 대한 높은 보장률의 미니보험을 판매할 수 있습니다. </h5></td></tr>
+                  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td><h5 class="post-subtitle"><img src = '{% static "weather/img/good.jpg" %}' width =20 height = 20> 공공시설 성범죄 관련 미니보험, 아동 관련 범죄 미니보험, 운전자 관련 미니보험(보복운전) 등 다양한 예시가 있습니다. </h5></td></tr>
                   </table>
                <br>
               <div class="clearfix">
